@@ -1,13 +1,13 @@
 import random
-n = random.randint(1, 9)
+num = random.randint(1, 9)
 guess = int(input("Enter an integer from 1 to 9: "))
-while n != "Guess":
+while num != "Guess":
     print
-    if guess < n:
+    if guess < num:
       print ("Guess is low")
       guess = int(input("Enter an integer from 1 to 9: "))
       
-    elif guess > n:
+    elif guess > num:
       print ("Guess is high")
       guess = int(input("Enter an integer from 1 to 9: "))
       
