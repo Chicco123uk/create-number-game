@@ -15,5 +15,7 @@ def difference_from_answer(guess,answer):
     print("Correct")
   if guess < answer:
     print("Too Low")
-  else:
+  if guess > answer:
     print("Too High")
+  else:
+    print("Input a valid number next time")
