@@ -1,21 +1,17 @@
-import math
 import random
-
-num = 0
-
-def generate_random_number():
-  math.random()
-  print(random.randint(1,9))
-
-
-def difference_from_answer(guess,answer):
-  answer = generate_random_number()
-  guess = int(input("Input a number 1 to 9"))
-  if guess == answer:
-    print("Correct")
-  if guess < answer:
-    print("Too Low")
-  if guess > answer:
-    print("Too High")
-  else:
-    print("Input a valid number next time")
+n = random.randint(1, 9)
+guess = int(input("Enter an integer from 1 to 9: "))
+while n != "Guess":
+    print
+    if guess < n:
+      print ("Guess is low")
+      guess = int(input("Enter an integer from 1 to 9: "))
+      
+    elif guess > n:
+      print ("Guess is high")
+      guess = int(input("Enter an integer from 1 to 9: "))
+      
+    else:
+      print ("you guessed it!")
+      break
+    print
